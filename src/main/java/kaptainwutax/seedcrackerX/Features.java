@@ -4,10 +4,7 @@ import com.seedfinding.mccore.version.MCVersion;
 import com.seedfinding.mcfeature.decorator.DesertWell;
 import com.seedfinding.mcfeature.decorator.EndGateway;
 import com.seedfinding.mcfeature.structure.*;
-import kaptainwutax.seedcrackerX.cracker.decorator.DeepDungeon;
-import kaptainwutax.seedcrackerX.cracker.decorator.Dungeon;
-import kaptainwutax.seedcrackerX.cracker.decorator.EmeraldOre;
-import kaptainwutax.seedcrackerX.cracker.decorator.WarpedFungus;
+import kaptainwutax.seedcrackerX.cracker.decorator.*;
 
 public class Features {
 
@@ -24,6 +21,9 @@ public class Features {
     public static EndGateway END_GATEWAY;
     public static DesertWell DESERT_WELL;
     public static EmeraldOre EMERALD_ORE;
+    public static DiamondOre DIAMOND_ORE;
+    public static DeepslateDiamondOre DEEPSLATE_DIAMOND_ORE;
+
     public static Dungeon DUNGEON;
     public static DeepDungeon DEEP_DUNGEON;
     public static WarpedFungus WARPED_FUNGUS;
@@ -45,6 +45,8 @@ public class Features {
         safe(() -> DUNGEON = new Dungeon(version));
         safe(() -> DEEP_DUNGEON = new DeepDungeon(version));
         safe(() -> WARPED_FUNGUS = new WarpedFungus(version));
+        safe(() -> DIAMOND_ORE = new DiamondOre(version));
+        safe(() -> DEEPSLATE_DIAMOND_ORE = new DeepslateDiamondOre(version));
     }
 
     private static void safe(Runnable runnable) {

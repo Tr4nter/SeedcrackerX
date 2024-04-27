@@ -2,6 +2,8 @@ package kaptainwutax.seedcrackerX.finder;
 
 import kaptainwutax.seedcrackerX.config.Config;
 import kaptainwutax.seedcrackerX.finder.decorator.*;
+import kaptainwutax.seedcrackerX.finder.decorator.ore.DeepslateDiamondOreFinder;
+import kaptainwutax.seedcrackerX.finder.decorator.ore.DiamondOreFinder;
 import kaptainwutax.seedcrackerX.finder.decorator.ore.EmeraldOreFinder;
 import kaptainwutax.seedcrackerX.finder.structure.*;
 import kaptainwutax.seedcrackerX.render.Renderer;
@@ -131,6 +133,8 @@ public abstract class Finder {
         END_GATEWAY(EndGatewayFinder::create, Category.DECORATORS, Config.get().endGateway, "finder.endGateways"),
         DUNGEON(DungeonFinder::create, Category.DECORATORS, Config.get().dungeon, "finder.dungeons"),
         EMERALD_ORE(EmeraldOreFinder::create, Category.DECORATORS, Config.get().emeraldOre, "finder.emeraldOres"),
+        DIAMOND_ORE(DiamondOreFinder::create, Category.DECORATORS, Config.get().diamondOre, "finder.diamondOres"),
+        DEEPSLATE_DIAMOND_ORE(DeepslateDiamondOreFinder::create, Category.DECORATORS, Config.get().deepslateDiamondOre, "finder.deepslateDiamondOres"),
         DESERT_WELL(DesertWellFinder::create, Category.DECORATORS, Config.get().desertWell, "finder.desertWells"),
         WARPED_FUNGUS(WarpedFungusFinder::create, Category.DECORATORS, Config.get().warpedFungus, "finder.warpedFungus"),
 
