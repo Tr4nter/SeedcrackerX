@@ -1,4 +1,4 @@
-#### SeedCrackerX but with diamond ores and deepslate diamond ores
+#### SeedCrackerX but with diamond ores and deepslate diamond ores, on by default.. because erm.. who downloads this mod specifically other than just to get diamond xray..
 
 ---
 # SeedCrackerX [![Github All Releases](https://img.shields.io/github/downloads/19MisterX98/SeedCrackerX/total.svg)]
@@ -14,15 +14,15 @@
 ## Installation
 
 Download and install the [fabric mod loader](https://fabricmc.net/use/)
- 
+
 Download the latest [release or pre-release](https://github.com/19MisterX98/SeedCrackerX/releases) of SeedCrackerX
-  
+
 put the .jar file in your mod directory, either %appdata%/.minecraft/mods/ folder for the vanilla launcher or your own instance folder.
-  
+
 #### Optional
-  
+
 Download the latest release of [Multiconnect](https://github.com/Earthcomputer/multiconnect/releases) or [ViaFabric](https://modrinth.com/mod/viafabric) to connect to servers on lower MC versions
-  
+
 ## Database
 
 Since the mod is used by many people, I have decided to create a Google sheet for server seeds.
@@ -53,11 +53,11 @@ You have to find 5 (or more) end cities or end gateways and then return to the c
 - [warped fungus](https://www.youtu.be/HKjwgofhKs4)
 
   ### Supported Decorators
-    - Dungeon
-    - End Gateway
-    - Desert Well
-    - Emerald Ore
-    - Warped Fungus
+  - Dungeon
+  - End Gateway
+  - Desert Well
+  - Emerald Ore
+  - Warped Fungus
 
 ## 1.18.X and higher
 
@@ -69,8 +69,8 @@ Go to the config menu via "/seedcracker gui" (1.19.3+) or "/seed gui" (before 1.
 
 For cracking, you now need to get 40 bits of liftable structures and 32 regular bits from the listed ones:
 
-  ### Supported Structures
-  
+### Supported Structures
+
     - Igloo - 9 regular and liftable bits
     - Desert Pyramid - 9 regular and liftable bits
     - Jungle Temple - 9 regular and liftable bits
@@ -90,7 +90,7 @@ After reducing your structure seeds, the mod will brute force your world seed vi
 ### The Nether
 
 Fungus cracking don't work anymore, so there are no way to find nether seed using SeedcrackerX, however you can try to crack it yourself by using [Nether_Bedrock_Cracker](https://github.com/19MisterX98/Nether_Bedrock_Cracker)
-    
+
 ### The End
 
 You have to find 5 (or more) end cities (fill up regular bits) and then return to the center of the end dimension to obtain the pillar seed, after that cracking should begin.
@@ -100,46 +100,46 @@ You have to find 5 (or more) end cities (fill up regular bits) and then return t
 ## Commands
 
 If version of your mod is older than 2.13.1, use prefix
- - `/seed` instead of `/seedcracker`
+- `/seed` instead of `/seedcracker`
 
-  ### GUI Command
-  - `/seedcracker gui`
-  
-  Opens the config gui where you can modify settings like the server mc-version, all finders, database and rendermode.
-  There are command alternatives for most of this, but they shouldn't be used anymore.
-  
-  ### Finder Reload Command
-  - `/seedcracker finder reload`
+### GUI Command
+- `/seedcracker gui`
 
-  Rescans the loaded Chunks to find structures that weren't found before.
+Opens the config gui where you can modify settings like the server mc-version, all finders, database and rendermode.
+There are command alternatives for most of this, but they shouldn't be used anymore.
 
-  ### Data Command
-  - `/seedcracker data clear`
-  
-  Clears all the collected data without requiring a relog. This is useful for multi-world servers.
-  
-  - `/seedcracker data bits`
-  
-  Display how many bits of information have been collected.
-  Normal bits are used for end pillar + structure cracking. Cracking starts at 32 bits.
-  Lifting bits are used for liftable structure cracking. Cracking starts at 40 bits.
-  
-  - `/seed data restore`
-  
-  When you leave a world, the mod will save currently collected structure information in a file of the .minecraft/config directory.
-  After rejoining, you can restore it with this command.
-  
-  
-  ### Debug Command
-  - `/seedcracker cracker debug`
+### Finder Reload Command
+- `/seedcracker finder reload`
 
-  Additional info is shown
-  
-  ### Database Command
-  - `/seedcracker database`
-  
-  Opens a [google sheet](https://docs.google.com/spreadsheets/d/1tuQiE-0leW88em9OHbZnH-RFNhVqgoHhIt9WQbeqqWw/edit?usp=sharing) that is maintained by the mod
-  
+Rescans the loaded Chunks to find structures that weren't found before.
+
+### Data Command
+- `/seedcracker data clear`
+
+Clears all the collected data without requiring a relog. This is useful for multi-world servers.
+
+- `/seedcracker data bits`
+
+Display how many bits of information have been collected.
+Normal bits are used for end pillar + structure cracking. Cracking starts at 32 bits.
+Lifting bits are used for liftable structure cracking. Cracking starts at 40 bits.
+
+- `/seed data restore`
+
+When you leave a world, the mod will save currently collected structure information in a file of the .minecraft/config directory.
+After rejoining, you can restore it with this command.
+
+
+### Debug Command
+- `/seedcracker cracker debug`
+
+Additional info is shown
+
+### Database Command
+- `/seedcracker database`
+
+Opens a [google sheet](https://docs.google.com/spreadsheets/d/1tuQiE-0leW88em9OHbZnH-RFNhVqgoHhIt9WQbeqqWw/edit?usp=sharing) that is maintained by the mod
+
 ## Video Tutorials
 
 Neil's:

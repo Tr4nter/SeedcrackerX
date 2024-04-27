@@ -30,8 +30,8 @@ public class Config {
     public FeatureToggle endGateway = new FeatureToggle(false);
     public FeatureToggle dungeon = new FeatureToggle(true);
     public FeatureToggle emeraldOre = new FeatureToggle(false);
-    public FeatureToggle diamondOre = new FeatureToggle(false);
-    public FeatureToggle deepslateDiamondOre = new FeatureToggle(false);
+    public FeatureToggle diamondOre = new FeatureToggle(true);
+    public FeatureToggle deepslateDiamondOre = new FeatureToggle(true);
 
     public FeatureToggle desertWell = new FeatureToggle(false);
     public FeatureToggle warpedFungus = new FeatureToggle(false);
